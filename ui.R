@@ -1,18 +1,18 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  titlePanel("stockVis"),
+  titlePanel("Stock Market Visualization"),
   
   sidebarLayout(
     sidebarPanel(
       helpText("Select a stock to examine. 
         Information will be collected from yahoo finance."),
     
-      textInput("symb", "Symbol", "SPY"),
+      textInput("symb", "Symbol", "GOOG"),
     
       dateRangeInput("dates", 
         "Date range",
-        start = "2013-01-01", 
+        start = "2014-01-01", 
         end = as.character(Sys.Date())),
    
       actionButton("get", "Get Stock"),
