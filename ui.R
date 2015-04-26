@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  titlePanel("Stock Market Visualization"),
+  titlePanel("stockVis"),
   
   sidebarLayout(
     sidebarPanel(
